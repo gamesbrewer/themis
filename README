@@ -1,0 +1,22 @@
+Fork Notes - Jonathan Ho
+
+22 March 2011
+generate all needed tables first using scaffolding:
+$ lein conjure generate scaffold users userid:string password:string username:string accesslevel:string
+
+migrate scaffolds into database
+$ lein conjure migrate
+
+everytime a new table is scaffold generated, migrate it to the database!!!
+
+29 March 2011
+Copied lib folder from test project into themis. Alternatively run: 
+$ lein plugin install lein-clojars/lein-clojars "0.6.0"
+to install plugins version 0.6.0, or whatever the latest version is
+
+-----------------------------------------------------------------------------------------------------------
+
+
+Copyright (C) 2010 Edham Arief / edham.arief@gmail.com
+
+Distributed under the Eclipse Public License, the same as Clojure.
